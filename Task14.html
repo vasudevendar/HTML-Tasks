@@ -3,58 +3,82 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Web Page Using Padding</title>
+  <title>Web Page with Padding Properties</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
+      background-color: #f0f0f0;
     }
-    .header, .footer {
+    .container {
+      width: 80%;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+    }
+    .box {
+      margin: 15px;
+      background-color: #e2e2e2;
+      border: 1px solid #ccc;
+    }
+    .padding-top {
+      padding-top: 20px;
+    }
+    .padding-right {
+      padding-right: 20px;
+    }
+    .padding-bottom {
+      padding-bottom: 20px;
+    }
+    .padding-left {
+      padding-left: 20px;
+    }
+    .header {
       background-color: #333;
       color: white;
       text-align: center;
       padding: 20px;
     }
-    .content {
+    .footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
       padding: 20px;
-    }
-    .box {
-      background-color: #f2f2f2;
-      padding: 30px;
-      margin-bottom: 20px;
-      border: 1px solid #ccc;
-    }
-    .inner-box {
-      background-color: #e2e2e2;
-      padding: 15px;
-      border: 1px solid #bbb;
     }
   </style>
 </head>
 <body>
 
   <div class="header">
-    <h1>Welcome to My Web Page</h1>
-    <p>Demonstrating the use of padding</p>
+    <h1>Web Page with Padding Properties</h1>
   </div>
 
-  <div class="content">
-    <div class="box">
-      <h2>Box with Padding</h2>
-      <p>This box has padding of 30px on all sides. Padding creates space inside the element, pushing the content away from the edges.</p>
-      <div class="inner-box">
-        <p>This is an inner box with padding of 15px on all sides. Padding helps to create a clear and readable layout.</p>
-      </div>
+  <div class="container">
+    <div class="box padding-top">
+      <h2>Padding Top</h2>
+      <p>This box has padding at the top.</p>
     </div>
-    <div class="box">
-      <h2>Another Box with Padding</h2>
-      <p>This box also has padding of 30px on all sides. Padding can help separate different sections of your content visually.</p>
+
+    <div class="box padding-right">
+      <h2>Padding Right</h2>
+      <p>This box has padding on the right side.</p>
+    </div>
+
+    <div class="box padding-bottom">
+      <h2>Padding Bottom</h2>
+      <p>This box has padding at the bottom.</p>
+    </div>
+
+    <div class="box padding-left">
+      <h2>Padding Left</h2>
+      <p>This box has padding on the left side.</p>
     </div>
   </div>
 
   <div class="footer">
-    <p>&copy; 2024 My Web Page. All rights reserved.</p>
+    <p>&copy; 2024 Web Page with Padding Properties. All rights reserved.</p>
   </div>
 
 </body>
