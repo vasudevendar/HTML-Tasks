@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Simple Website with Navigation</title>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .navbar {
+        overflow: hidden;
+        background-color: black;
+    }
+    .navbar a {
+        float: right;
+        display: block;
+        color: white;
+        text-align: right;
+        padding: 14px 20px;
+        text-decoration: none;
+    }
+    .navbar a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+    .section {
+        padding: 20px;
+    }
+    #home {
+        background-color: #f2f2f2;
+    }
+    #about {
+        background-color: #e2e2e2;
+    }
+    #services {
+        background-color: #d2d2d2;
+    }
+    #contact {
+        background-color: #c2c2c2;
+    }
+</style>
+</head>
+<body>
+  <nav>
+    <div class-="navbar">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div id="home" class="section">
+      <h1>welcome to our website</h1>
+      <p>This is the home section of the website.</p>
+    </div>
+    <div id="about" class="section">
+      <h1>About Us</h1>
+      <p>This section contains information about our website.
+        Our services available for timings: 10AM - 6PM.
+      </p>
+    </div>
+    <div id="services" class="section">
+      <h1>our Services</h1>
+      <p>we provide some courses related to IT sector
+        <ol>
+          <li>Java</li>
+          <li>Phyton</li>
+          <li>Devops</li>
+          <li>Testing</li>
+          <li>Embeded</li>
+        </ol>
+      </p>
+    </div>
+    <div id="contact" class="section">
+      <h1>Contact Us</h1>
+      <p>Phone number="+91 9676003978" <br>
+        Mail Id: 1026deva@gmail.com
+      </p>
+    </div>
+  </nav>
+</body>
+</html>

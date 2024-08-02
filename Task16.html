@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Page with Scroll Properties</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .header, .footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+      height: 300px; /* Fixed height to enable vertical scrolling */
+      overflow: auto; /* Enables both horizontal and vertical scrolling */
+    }
+    .scroll-x {
+      width: 100%;
+      overflow-x: auto; /* Enables horizontal scrolling */
+      white-space: nowrap; /* Prevents wrapping of inline elements */
+    }
+    .scroll-y {
+      height: 200px; /* Fixed height to enable vertical scrolling */
+      overflow-y: auto; /* Enables vertical scrolling */
+      background-color: #e2e2e2;
+    }
+    .content {
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+    }
+    .long-content {
+      width: 2000px; /* Creates horizontal overflow */
+    }
+    .tall-content {
+      height: 1000px; /* Creates vertical overflow */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>Web Page with Scroll Properties</h1>
+  </div>
+
+  <div class="container">
+    <div class="scroll-x">
+      <div class="content long-content">
+        <h2>Horizontal Scrolling</h2>
+        <p>This container demonstrates horizontal scrolling. Scroll horizontally to view the extra content that extends beyond the container's width.</p>
+      </div>
+    </div>
+
+    <div class="scroll-y">
+      <div class="content tall-content">
+        <h2>Vertical Scrolling</h2>
+        <p>This container demonstrates vertical scrolling. Scroll vertically to view the extra content that extends beyond the container's height.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2024 Web Page with Scroll Properties. All rights reserved.</p>
+  </div>
+
+</body>
+</html>

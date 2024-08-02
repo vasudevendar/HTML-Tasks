@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Page with Scroll Margin Properties</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      height: 2000px; /* Make the body tall to enable scrolling */
+    }
+    .header, .footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .container {
+      width: 80%;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+    .section {
+      height: 500px;
+      margin: 20px 0;
+      padding: 20px;
+      background-color: #e2e2e2;
+      border: 1px solid #ccc;
+    }
+    .highlight {
+      background-color: #d2d2d2;
+      border: 2px solid #bbb;
+      padding: 10px;
+      scroll-margin-top: 80px; /* Space above the element when scrolled into view */
+    }
+    .highlight2 {
+      background-color: #c2c2c2;
+      border: 2px solid #aaa;
+      padding: 10px;
+      scroll-margin-bottom: 50px; /* Space below the element when scrolled into view */
+    }
+    .highlight3 {
+      background-color: #b2b2b2;
+      border: 2px solid #999;
+      padding: 10px;
+      scroll-margin: 40px; /* Uniform space around the element when scrolled into view */
+    }
+    .highlight4 {
+      background-color: #a2a2a2;
+      border: 2px solid #888;
+      padding: 10px;
+      scroll-margin: 0; /* No additional margin around the element when scrolled into view */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>Web Page with Scroll Margin Properties</h1>
+  </div>
+
+  <div class="container">
+    <div class="section">
+      <h2>Section 1</h2>
+      <p>Scroll down to see the scroll margin examples.</p>
+    </div>
+
+    <div class="section highlight">
+      <h2>Highlighted Section with scroll-margin-top</h2>
+      <p>This section has a scroll margin of 80px above it.</p>
+    </div>
+
+    <div class="section">
+      <h2>Section 3</h2>
+      <p>Some content here.</p>
+    </div>
+
+    <div class="section highlight2">
+      <h2>Highlighted Section with scroll-margin-bottom</h2>
+      <p>This section has a scroll margin of 50px below it.</p>
+    </div>
+
+    <div class="section">
+      <h2>Section 5</h2>
+      <p>Some content here.</p>
+    </div>
+
+    <div class="section highlight3">
+      <h2>Highlighted Section with scroll-margin</h2>
+      <p>This section has a uniform scroll margin of 40px around it.</p>
+    </div>
+
+    <div class="section">
+      <h2>Section 7</h2>
+      <p>Some content here.</p>
+    </div>
+
+    <div class="section highlight4">
+      <h2>Highlighted Section with scroll-margin: 0</h2>
+      <p>This section has no additional scroll margin.</p>
+    </div>
+
+    <div class="section">
+      <h2>Section 9</h2>
+      <p>Some content here.</p>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2024 Web Page with Scroll Margin Properties. All rights reserved.</p>
+  </div>
+
+</body>
+</html>
