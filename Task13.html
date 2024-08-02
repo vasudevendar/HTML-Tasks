@@ -4,53 +4,58 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Web Page Using Fonts</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@300;400&display=swap">
   <style>
     body {
-      font-family: 'Roboto', sans-serif;
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
       margin: 0;
       padding: 20px;
+      background-color: #f0f0f0;
     }
-    .header, .footer {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 20px 0;
+    h1, h2, h3{
+      font-family: 'Georgia', serif;
     }
-    h1, h2 {
-      font-family: 'Open Sans', sans-serif;
+    h1 {
+      font-size: 36px;
+      font-weight: bold;
+    }
+    h2 {
+      font-size: 30px;
+      font-weight: normal;
+      font-style: italic;
+    }
+    h3 {
+      font-size: 24px;
+      font-weight: lighter;
     }
     p {
-      font-family: 'Roboto', sans-serif;
+      font-size: 20px;
+      line-height: 1.5;
     }
-    .custom-font {
-      font-family: 'Courier New', Courier, monospace;
+    span {
+      font-weight: bold;
+      font-style: italic; 
+    }
+    .highlight {
+      font-size: 18px;
+      color: #ff0000;
+      font-weight: bold;
+    }
+    .note {
+      font-size: 16px;
+      color: #666;
+      font-style: italic;
     }
   </style>
 </head>
 <body>
-
-  <div class="header">
-    <h1>Welcome to My Web Page</h1>
-    <p class="custom-font">Using different fonts to enhance the design</p>
-  </div>
-
-  <div class="content">
-    <h2>Introduction</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae turpis auctor, semper sapien vel, bibendum felis. Donec in metus ac magna tincidunt aliquet.</p>
-    
-    <h2>Web-Safe Fonts</h2>
-    <p class="custom-font">This is an example of a web-safe font: Courier New.</p>
-
-    <h2>Google Fonts</h2>
-    <p>Using Google Fonts for a more unique and varied typography.</p>
-    <p style="font-family: 'Open Sans', sans-serif;">This paragraph uses the Open Sans font.</p>
-    <p style="font-family: 'Roboto', sans-serif;">This paragraph uses the Roboto font.</p>
-  </div>
-
-  <div class="footer">
-    <p>&copy; 2024 My Web Page. All rights reserved.</p>
-  </div>
-
+  <h1>Creating of web page using Fonts</h1>
+  <h2>Creating of web page using Fonts</h2>
+  <h3>Creating of web page using Fonts</h3>
+  
+  <p>Creating a web <span>page</span> using fonts. This paragraph uses the Arial font family with a font size of 20px, line height of 1.5, and bold italic style for the <span>highlighted text</span>.</p>
+  
+  <p class="highlight">This is a highlighted text with a different font size and color.</p>
+  
+  <p class="note">This is a note styled with italic font and a smaller font size.</p>
 </body>
 </html>
